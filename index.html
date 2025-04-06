@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Racing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Game Menu -->
+  <div id="menu">
+    <h1>🏁 Car Racing Game</h1>
+    <button onclick="startGame(1)">1 Player</button>
+    <button onclick="startGame(2)">2 Players</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="gameContainer" class="hidden">
+    <canvas id="player1Canvas"></canvas>
+    <canvas id="player2Canvas" class="hidden"></canvas>
+    <div id="timer" class="hidden">60</div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="gameOver" class="hidden">
+    <img src="finish.gif" alt="Finish" />
+    <h2 id="gameMessage"></h2>
+    <p>Press ENTER to restart</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
