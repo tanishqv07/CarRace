@@ -1,68 +1,11 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
+body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
-  }
-  
-  button {
-    margin: 10px;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
-  #menu {
-    margin-top: 100px;
-  }
-  
-  #gameContainer {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    overflow: hidden;
+    background: #000;
   }
   
   canvas {
-    background-color: #333;
-    flex: 1;
-  }
-  
-  #timer {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    background: rgba(0,0,0,0.5);
-    padding: 8px 16px;
-    border-radius: 8px;
-  }
-  
-  #gameOver {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #gameOver img {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-  
-  .hidden {
-    display: none;
+    display: block;
+    margin: 0 auto;
   }
   
